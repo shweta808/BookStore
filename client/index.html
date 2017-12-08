@@ -1,0 +1,20 @@
+<html>
+<head><title> Book Store </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<!-- <script src="app.js"></script> -->
+	<script src="controllers/genre.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="GenreController">
+		<button ng-click="getGenres()">Genres</button><br><br>
+		<ul>
+			<li ng-repeat="x in genres">{{ x.name }}</li>
+		</ul>
+	</div>
+	
+</body>
+</html>
+
+
